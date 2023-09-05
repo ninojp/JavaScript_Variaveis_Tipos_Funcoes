@@ -42,24 +42,6 @@ let varNull=null;
 console.log(varNull); //Exibi null
 console.log(typeof varNull); /*Exibi object(variável do tipo objeto)(foi um erro na de definição da própria linguage,
  que até hoje não foi por questões de compatibilidade com os codigos já em uso)*/
-const idade = 2;
-console.log(typeof idade); //Exibi number(variável do tipo numero)
-const idade2 = 12;
-const nome="Lara";
-console.log(typeof nome); //Exibi string(variável do tipo string)
-const nome2="lara";
-const sobrenome="Ayumi";
-const bacharel=false;
-const dezAnosDepois="12";
-const nomeCompleto = nome +" "+ sobrenome;
-const resultado = idade + dezAnosDepois;
-console.log(nomeCompleto); //Exibi a concatenação dos nomes pois são strings
-// console.log(resultado); // Exibi 212
-// [=] simbolo de ATRIBUIÇÃO, [==] IGUALDADE, [===]IDÊNTICO valor e tipo
-console.log(idade2 == dezAnosDepois); //Exibi TRUE, pois == compara o VALOR não o TIPO da váriavel
-console.log(idade2 === dezAnosDepois); //Exibi FALSE, pois === compara o VALOR e o TIPO
-console.log(nome == nome2); //Exibi FALSE, pois o JavaScript é case-sensitive(sensível a maiúsculas e minúsculas)
-console.log(bacharel == 1);//Exibi FALSE, pois 1 é igual a TRUE e FALSE igual a 0(bacharel, no caso).
 
 // existem ainda mais dois tipos de variáveis: null e undefined.
 let input = null;
@@ -82,22 +64,3 @@ const dezAnosDepois4=Number("12");
 //já neste caso estou deixando EXPLÍCITO(indicando) que mesmo dentro de aspas a variável é do tipo NUMBER
 const dezAnosDepois5=Number("12a");
 //Neste caso ao usar esta variável para calculo, exibiria NaN(not a Number), pois contém uma LETRA junto do numero
-
-
-// Um pouco sobre funções visto no material extra das aulas
-// Math.round(), retorna o valor de um número arredondado para o inteiro mais próximo.
-// var aredondar = Math.round(divisao);
-// console.log(aredondar);
-
-// Como queremos deixar a resposta com duas casas decimais após a vírgula utilizamos: toFixed(2)
-// var aredondar2 = divisao.toFixed(2);
-// console.log(aredondar2);
-
-{
-    var respostaDeTudo = 3.14
-    let idade = 42
-    const pi = 29
-    console.log(respostaDeTudo, idade, pi)
-
-}
-console.log(respostaDeTudo, idade, pi);
