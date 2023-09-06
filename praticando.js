@@ -1,4 +1,4 @@
-
+/*
 //Exercício sobre TIPOS de variáveis
 const idade = 2;
 console.log(typeof idade); //Exibi number(variável do tipo numero)
@@ -32,7 +32,6 @@ console.log(respostaDeTudo);
 // console.log(respostaDeTudo, idadeHomen, pi); //ERRO pois LET nõa pode ser usada foro do scopo da função
 // let idadeHomen = 42
 
-
 // teremos a conversão do número 12341234 para uma string “12341234” e assim poderemos fazer a concatenação entre as strings
 let telefone = 12341234;
 console.log("O telefone é " + String(telefone)); 
@@ -51,28 +50,51 @@ let largura1 = "10";
 let altura1 = "5";
 console.log(Number(largura1) * Number(altura1)); // teremos a conversão de String para números, possibilitando a realização da multiplicação
 
-// Vamos calcular a área de um retângulo
+// TESTE, Vamos calcular a área de um retângulo
 let larguraRet = "10";
 let alturaRet = "5";
-// console.log(Number(largura) * Number(altura)); // teremos a conversão de String para números, possibilitando a realização da multiplicação
 console.log(String(larguraRet) * String(alturaRet));
+console.log(typeof larguraRet);
 
-let largura2 = "10";
+let largura2 = 10;
 let altura2 = "5";
 console.log( + largura2 * + altura2); // teremos a conversão de String para números realizado usando o + antes das variáveis
+console.log(typeof largura2);
 
 
-// EU TESTANDO ALGUMAS COISAS PRA TENTAR ENTENDER
-// function declaraVariavel(respostaDeTudo, idade, pi){
-    // var respostaDeTudo = 3.14
-    // var respostaDeTudo;
-    // let idade = 42
-    // let idade;
-    // var idade;
-    // const pi = 29;
-    // var pi;
-    // console.log(respostaDeTudo, idade, pi);
-// }
-// console.log(respostaDeTudo, idade, pi);
-// console.log(respostaDeTudo);
-// declaraVariavel(3.14, 43, 39);
+let meuNome = "leonardo";
+console.log(Number(meuNome)); // como a variável meuNome não contém apenas números ele retorna o erro NaN (Not a Number, não é número);
+console.log( + meuNome); // a conversão também retornará NaN
+
+let usuarioConectado = false;
+console.log(Number(usuarioConectado)); // teremos a conversão da booleana para número, sendo que false (falso) retorna o número 0.
+usuarioConectado = true;
+console.log(Number(usuarioConectado)); // agora teremos a conversão de true (verdadeiro) para o número 1.
+
+// LISTA de palavras reservadas do JavaScript. Ou seja, não podemos usá-las para dar nomes (identificar) variáveis, funções ou outros blocos de código que precisem de identificadores.
+// https://cursos.alura.com.br/course/fundamentos-javascript-tipos-variaveis-funcoes/task/94132
+// Exemplos
+// let var = 0;
+// let if = 0;
+// let const = "Alura";
+
+let minhaLet;
+const minhaConst=10;
+console.log(minhaLet); //undefined
+console.log(minhaConst); 
+
+// atribuindo um valor com TIPO DE DADO STRING
+minhaLet = "eu sou um texto";
+// const minhaConst="outro Valor"; //Não posso atribuir outro valor a um constante
+console.log(minhaLet); // "eu sou um texto"
+
+// reatribuindo, desta vez com dado do TIPO NUMBER
+minhaLet = 100;
+console.log(minhaLet); //100
+*/
+minhaLet = 100;
+console.log("deu erro");
+console.error("deu erro");
+
+console.log("deu erro");
+console.error(new Error("deu erro"));
