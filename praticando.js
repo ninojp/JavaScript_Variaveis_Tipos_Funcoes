@@ -91,10 +91,35 @@ console.log(minhaLet); // "eu sou um texto"
 // reatribuindo, desta vez com dado do TIPO NUMBER
 minhaLet = 100;
 console.log(minhaLet); //100
-*/
+
+
 minhaLet = 100;
 console.log("deu erro");
 console.error("deu erro");
 
 console.log("deu erro");
 console.error(new Error("deu erro"));
+*/
+
+//Exemplo do Palindromo
+
+function palavraPalindroma(){
+    let palavra = "radar";
+    let palavraDividida = palavra.split();
+    let palavraJoin = palavraDividida.reverse();
+    let palavraInvertida = palavraJoin.join();
+    if(palavra === palavraInvertida){
+        console.log(`Esta palavra ${palavra} é um palindromo`);
+    }else{
+        console.log("Esta palavra NÃO é um palindromo");
+    }
+}
+
+
+
+
+
+
+
+
+
