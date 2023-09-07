@@ -92,32 +92,65 @@ console.log(minhaLet); // "eu sou um texto"
 minhaLet = 100;
 console.log(minhaLet); //100
 
-
 minhaLet = 100;
 console.log("deu erro");
 console.error("deu erro");
 
 console.log("deu erro");
 console.error(new Error("deu erro"));
+//----------------------------------------------------------------------------------------------------------------------------------
 */
 
 //Exemplo do Palindromo
+// palavraPalindroma(); //EXECUTANDO A FUNÇÃO ANTES DE DECLARAR A MESMA: hoisting
+// function palavraPalindroma(){
+//     let palavra = "radar";
+//     let palavraDividida = palavra.split("");
+//     console.log(palavraDividida+" "+typeof palavraDividida);
+//     let palavraJoin = palavraDividida.reverse();
+//     // console.log(palavraJoin+" "+typeof palavraJoin);
+//     let palavraInvertida = palavraJoin.join("");
+//     console.log(palavraInvertida+" "+typeof palavraInvertida);
+//     if(palavra == palavraInvertida){
+//         console.log(`A palavra ${palavra} é um palindromo`);
+//     }else{
+//         console.log(`A palavra ${palavra} NÃO é um palindromo`);
+//     }
+// }
 
-function palavraPalindroma(){
-    let palavra = "radar";
-    let palavraDividida = palavra.split();
+// ESCREVER A FUNÇÃO NA FORMA DE EXPRESSÃO
+// const palavraPalindroma = function(palavra){
+//     // let palavra = "radar";
+//     let palavraDividida = palavra.split("");
+//     // console.log(palavraDividida+" "+typeof palavraDividida);
+//     let palavraJoin = palavraDividida.reverse();
+//     // console.log(palavraJoin+" "+typeof palavraJoin);
+//     let palavraInvertida = palavraJoin.join("");
+//     // console.log(palavraInvertida+" "+typeof palavraInvertida);
+//     if(palavra == palavraInvertida){
+//         console.log(`A palavra ${palavra} é um palindromo`);
+//     }else{
+//         console.log(`A palavra ${palavra} NÃO é um palindromo`);
+//     }
+// }
+// palavraPalindroma("radar"); // Na forma de expressão, só possivel executar a função após a mesma ter sido declarada
+
+// ESCREVER A FUNÇÃO NA FORMA ARROW
+const palavraPalindroma = palavra => {
+    // let palavra = "radar";
+    let palavraDividida = palavra.split("");
+    // console.log(palavraDividida+" "+typeof palavraDividida);
     let palavraJoin = palavraDividida.reverse();
-    let palavraInvertida = palavraJoin.join();
-    if(palavra === palavraInvertida){
-        console.log(`Esta palavra ${palavra} é um palindromo`);
+    // console.log(palavraJoin+" "+typeof palavraJoin);
+    let palavraInvertida = palavraJoin.join("");
+    // console.log(palavraInvertida+" "+typeof palavraInvertida);
+    if(palavra == palavraInvertida){
+        console.log(`A palavra ${palavra} é um palindromo`);
     }else{
-        console.log("Esta palavra NÃO é um palindromo");
+        console.log(`A palavra ${palavra} NÃO é um palindromo`);
     }
 }
-
-
-
-
+palavraPalindroma("radar"); // Na forma de expressão, só possivel executar a função após a mesma ter sido declarada
 
 
 
